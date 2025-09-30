@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="script1.js"></script>
+    <style>
+      .shirt{
+        margin-top:20px;
+       
+        height:200px;
+        width: auto;
+        background-color:antiquewhite;
+        display: flex;
+        gap:30px;
+      }
+      #off{
+        margin-top:35px;
+        margin-right:150px;
+        margin-left:150px;
+      }
+      
+      #but{
+        margin-top:20px;
+        height:35px;
+        width:100px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-color: black;
+        transition: transform 0.2s, background-color 0.2s;
+        cursor: pointer;
+      }
+      #but1{
+        margin-top:15px;
+        height:35px;
+        width:100px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-color: black;
+        transition: transform 0.2s, background-color 0.2s;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+    #top {
+        gap: 20px;
+    }
+    
+    #off {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #shirt {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#filters{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+#type{
+        margin-top:35px;
+        margin-left:30px;
+        width:85px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none;
+       
+}
+#price{
+        margin-top:35px;
+        
+        width:60px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#review{
+        margin-top:35px;
+        
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#color{
+        margin-top:35px;
+      
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#material{
+        margin-top:35px;
+       
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+   
+}
+#offer{
+        margin-top:35px;
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#sortby{
+        margin-top:35px;
+       margin-left: 540px;
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: white;
+        
+}
+.head{
+  margin-left: 30px;
+}
+#shirts{
+  display: flex;
+  flex-direction: row;
+}
+#headphones{
+  display: flex;
+  flex-direction: row;
+}
+#watches{
+  display: flex;
+  flex-direction: row;
+}
+.shirt11{
+  height: 250px;
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+.shirt11:hover {
+    transform: scale(1.03);
+}
+.head1 {
+    height: 220px;        
+    width: 220px;       
+    border-radius: 12px;  
+    transition: transform 0.3s;
+    object-fit: contain;  
+    background: linear-gradient(145deg, #f6f8fd, #eef0f5); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.head1:hover {
+    transform: scale(1.03);
+}
+
+
+.he{
+  margin-left: 60px;
+}
+.shirt1{
+  margin-left: 30px;
+  padding: 15px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.shirt1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.headphone{
+  margin-left: 30px;
+  padding: 15px;
+    transition: transform 0.2s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.headphone:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+}
+.watch{
+  margin-left: 30px;
+  padding: 15px;
+    transition: transform 0.2s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.watch:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+}
+.watch1{
+  height: 220px;        
+    width: 220px;       
+    border-radius: 12px;  
+    transition: transform 0.3s;
+    object-fit: contain;  
+    background: linear-gradient(145deg, #f6f8fd, #eef0f5); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+.watch1:hover {
+  transform: scale(1.03);
+}
+h3,h4,h5,.hi,.he{
+  padding:0;
+  margin:0;
+}
+h4{
+  margin-top: 12px;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+.btn{
+  border-radius: 25px;
+  height : 35px;
+  margin-top: 8px;
+  width:100px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #404040;
+  font-weight: 600;
+}
+.options{
+  position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.previous, .nextone{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding:10px;
+    cursor:pointer;
+
+}
+.previous{
+    left:20px;
+}
+.nextone{
+    right:20px;
+}
+.ad1{
+  margin-right:50px;
+}
+.ad2{
+  margin-right: 50px;
+}
+.regi{
+  display:none;
+}
+.active{
+  display:flex;
+}
+
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div id="top">
+        <img src="./images/nexcart.svg" alt="nexcart">
+            <select id="Categories" name="Categories" onchange="updateActivities()" required>
+                <option value="" disabled selected>Categories</option>
+                <option value="shirts">Shirts</option>
+                <option value="headphones">Headphones</option>
+                <option value="watch">Watch</option>
+            </select>
+            <p>Deals</p>
+            <p>What's New</p>
+            <p>Delivery</p>
+            <div class="search-container">
+                <input type="search" class="search-input" placeholder="Search Product">
+                <button class="search-button">
+                  <img src="./images/search.svg" alt="Search" class="search-icon">
+                </button>
+              </div>
+              <div id="acc">
+              <img src="./images/user.png" alt="account" class="account">
+              <p id="acc1">Account</p>
+            </div>
+            <div id="cart">
+                <img src="./images/cart.png" alt="cart" class="cart">
+                <p>Cart</p>
+            </div>
+            <div id="wishlist">
+              <img src="./images/heart.png" alt="wishlist" class="wishlist">
+              <p>Wishlist</p>
+          </div>
+    </div>
+    <div class="options">
+      <button class="previous">&#8249;</button>
+    <div class="regi active">
+      <div class="shirt">
+        <h1 id="off">Grab Upto 50% off <br> on your first purchase<br><button id="but">Buy Now</button></h1>
+        <img src="./images/shirt.png" alt="shirt" class="ad1">
+        <img src="./images/shirt2.png" alt="shirt" class="ad2">
+        </div>
+      </div>
+        <div  class="regi">
+        <div class="shirt">
+          <h1 id="off">Grab upto 25% off <br> on premium headphones<br><button id="but">Buy Now</button></h1>
+          <img src="./images/headj1.jpg" alt="headj" class="ad1">
+          <img src="./images/headj.jpg" alt="headj1" class="ad2">
+        </div>
+        </div>
+        <div class="regi">
+          <div class="shirt">
+            <h1 id="off">Elegant watches with exciting offers,<br>grab yours now!<br><button id="but1">Buy Now</button></h1>
+            <img src="./images/watchj.jpg" alt="watchj" class="ad1">
+            <img src="./images/watchj2.jpg" alt="watchj2" class="ad2">
+          </div>
+        </div>
+        <button class="nextone">&#8250;</button>
+      </div>
+     <div id="filters">
+      <select id="type" name="type" required>
+        <option value="" disabled selected>Shirt Type</option>
+        <option value="slimfit">Slim Fit</option>
+        <option value="regularfit">Regular fit</option>
+        <option value="skinnyfit">Skinny fit</option>
+        <option value="athleticfit">Athletic fit</option>
+      </select>
+      <select id="price" name="price" required>
+        <option value="" disabled selected>Price</option>
+        <option value="Rs.1000">below ₹1000</option>
+        <option value="Rs.1000toRs.1500">₹1000 - ₹1500</option>
+        <option value="Rs.1500toRs.2500">₹1500 - ₹2500</option>
+        <option value="aboveRs.2500">above ₹2500</option>
+      </select>
+      <select id="review" name="review" required>
+        <option value="" disabled selected>Review</option>
+        <option value="5star">Excellent</option>
+        <option value="4star">Very good</option>
+        <option value="3star">Good</option>
+        <option value="2star">Average</option>
+        <option value="1star">Poor</option>
+      </select>
+      <select id="color" name="color" required>
+        <option value="" disabled selected>Color</option>
+        <option value="red">Gray</option>
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Red</option>
+        <option value="brown">Brown</option>
+        <option value="black">Black</option>
+      </select>
+      <select id="material" name="material" required>
+        <option value="" disabled selected>material</option>
+        <option value="cotton">Cotton</option>
+        <option value="polyester">Polyester</option>
+        <option value="linen">Linen</option>
+        <option value="bamboo">Bamboo</option>
+      </select>
+      <select id="offer" name="offer" required>
+        <option value="" disabled selected>offer</option>
+        <option value="75%off">75% off</option>
+        <option value="50%off">50% off</option>
+        <option value="40%off">40% off</option>
+        <option value="25%off">25% off</option>
+      </select>
+      <select id="sortby" name="sortby" required>
+        <option value="" disabled selected>sort by</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+        <option value="type">Type</option>
+      </select>
+     </div>
+     <h2 class="head">Best Shirts For You!</h2>
+     <div id="shirts">
+      <div class="shirt1">
+       <a href="shirt3.html">
+       <img src="./images/shirt3.png" alt="shirt3" class="shirt11">
+      </a>
+        <h4>Men Shirt with Spread Collar</h4>
+        <p class="hi">Slim Fit Cotton</p>
+        <p class="he">₹1,699</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="shirt1">
+        <a href="shirt4.html">
+        <img src="./images/shirt4.png" alt="shirt4" class="shirt11">
+      </a>
+         <h4>Cotton Stretch Plain Shirt</h4>
+         <p class="hi">Slim Fit cotton blend fabric</p>
+         <p class="he">₹2,499</p>
+         <button class="btn">Add to Cart</button>
+       </div>
+       <div class="shirt1">
+        <a href="shirt5.html">
+        <img src="./images/shirt5.png" alt="shirt5" class="shirt11">
+      </a>
+         <h4>Black Premium Cotton Shirt</h4>
+         <p class="hi">Pencil Fit satin cotton</p>
+         <p class="he">₹1,449</p>
+         <button class="btn">Add to Cart</button>
+       </div>
+       <div class="shirt1">
+        <a href="shirt6.html">
+        <img src="./images/shirt6.png" alt="shirt6" class="shirt11">
+      </a>
+         <h4>Men's Navy Blue Solid Cotton</h4>
+         <p class="hi">Straight Fit</p>
+         <p class="he">₹2,099</p>
+         <button class="btn">Add to Cart</button>
+       </div>
+       <div class="shirt1">
+        <a href="shirt7.html">
+        <img src="./images/shirt7.png" alt="shirt7" class="shirt11">
+      </a>
+         <h4>Bright Red Casual Shirt</h4>
+         <p class="hi">Regular Fit</p>
+         <p class="he">₹1,599</p>
+         <button class="btn">Add to Cart</button>
+       </div>
+     </div>
+     <h2 class="head">Best Headphones For You!</h2>
+     <div id="headphones">
+      <div class="headphone">
+        <a href="head1.html">
+        <img src="./images/head1.png" alt="head1" class="head1">
+      </a>
+        <h4>Black PTron Bassbuds Earbuds</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹599</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <a href="head2.html">
+        <img src="./images/head2.png" alt="head2" class="head1">
+      </a>
+        <h4>HP H150 Wireless in-Ear Earbuds</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹648</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <a href="head3.html">
+        <img src="./images/head3.png" alt="head3" class="head1">
+      </a>
+        <h4>Leaf Bass Pro Headphones</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹4,999</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <a href="head4.html">
+        <img src="./images/head4.png" alt="head4" class="head1">
+      </a>
+        <h4>AirPods Pro 2</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹24,900</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <a href="head5.html">
+        <img src="./images/head5.png" alt="head5" class="head1">
+      </a>
+        <h4>WILLED Wired Earphones with Microphone</h4>
+        <p class="hi">Connectivity type - wired</p>
+        <p class="he">₹4,568</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+     </div>
+     <h2 class="head">Best Watches For You!</h2>
+      <div id="watches">
+        <div class="watch">
+          <img src="./images/watch1.png" alt="watch1" class="watch1">
+          <h4>Casio Enticer Dial Men's Watch</h4>
+          <p class="hi">Band Colour - Silver</p>
+          <p class="he">₹2,995</p>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <div class="watch">
+          <img src="./images/watch2.png" alt="watch2" class="watch1">
+          <h4>Armani Exchange SKU AX2535</h4>
+          <p class="hi">Band Colour - Green</p>
+          <p class="he">₹6,395</p>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <div class="watch">
+          <img src="./images/watch3.png" alt="watch3" class="watch1">
+          <h4>Carlton London Men Analog Watch</h4>
+          <p class="hi">Band Colour - Silver</p>
+          <p class="he">₹5,094</p>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <div class="watch">
+          <img src="./images/watch4.png" alt="watch4" class="watch1">
+          <h4>Casio Men's Quartz Sport Watch</h4>
+          <p class="hi">Band Colour - Silver</p>
+          <p class="he">₹8,589</p>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <div class="watch">
+          <img src="./images/watch5.png" alt="watch5" class="watch1">
+          <h4>French Connection Men's Analog Watch</h4>
+          <p class="hi">Band Colour - Silver</p>
+          <p class="he">₹6,950</p>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+</body>
+</html>
