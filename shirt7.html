@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div id="top">
+        <img src="./images/nexcart.svg" alt="nexcart" id="logo">
+            <select id="Categories" name="Categories" onchange="updateActivities()" required>
+                <option value="" disabled selected>Categories</option>
+                <option value="shirts">Shirts</option>
+                <option value="headphones">Headphones</option>
+                <option value="watch">Watch</option>
+            </select>
+            <p>Deals</p>
+            <p>What's New</p>
+            <p>Delivery</p>
+            
+            <div class="search-container">
+                <input type="search" class="search-input" placeholder="Search Product">
+                <button class="search-button">
+                  <img src="./images/search.svg" alt="Search" class="search-icon">
+                </button>
+              </div>
+              <div id="acc">
+              <img src="./images/user.png" alt="account" class="account">
+              <p id="acc1">Account</p>
+            </div>
+            <div id="cart">
+                <img src="./images/cart.png" alt="cart" class="cart">
+                <p>Cart</p>
+            </div>
+            <div id="wishlist">
+              <img src="./images/heart.png" alt="wishlist" class="wishlist">
+              <p>Wishlist</p>
+          </div>
+    </div>
+    <div class="container">
+    <div class="shirtalign">
+      <div class="pimages">
+      <button class="prev">&#8249;</button>
+    <img src="./images/shirt7.png" alt="shirt3" id="aligns" class="pimage active">
+    <img src = "./images/shirt71.png" alt="shirt31" id="aligns4" class="pimage">
+        <img src = "./images/shirt72.png" alt="shirt32" id="aligns5" class="pimage">
+        <img src = "./images/shirt73.png" alt="shirt33" id="aligns6" class="pimage">
+        <button class="next">&#8250;</button>
+      </div>
+      <div id="angle">
+        <img src="./images/shirt7.png" alt="shirt3" id="aligns1" >
+        <img src = "./images/shirt71.png" alt="shirt31" id="aligns2" >
+        <img src = "./images/shirt72.png" alt="shirt32" id="aligns0" >
+        <img src = "./images/shirt73.png" alt="shirt33" id="aligns3" >
+      </div>
+    </div>
+    <div class="details">
+    <h1 class="lav">Navy Blue Cotton Regular Shirt</h1>
+    <p class="hi">Fused collar and cuffs, collar stand and flat felled side seams provide structure and stability to all our shirts.</p>
+    <div class="ratings">
+      <span class="stars">★★★★☆</span>
+      <span class="rating-count">(750 reviews)</span>
+  </div>
+  <div class="pri">
+  <p class="he1">₹1,599</p>
+  <p class="he2">₹3,999</p>
+  <span class="discount">60% OFF</span>
+</div>
+<h4>Choose a Color</h4>
+<div class="shirt-colors">
+  <div class="color-option active" data-color="#FF0000">
+    <div class="color-swatch" style="background-color: #FF0000;"></div>
+    <span class="color-name">Red</span>
+  </div>
+  <div class="color-option" data-color="#0000FF">
+    <div class="color-swatch" style="background-color: #0000FF;"></div>
+    <span class="color-name">Blue</span>
+  </div>
+  <div class="color-option" data-color="#800080">
+    <div class="color-swatch" style="background-color: #800080;"></div>
+    <span class="color-name">Purple</span>
+  </div>
+  <div class="color-option" data-color="#008000">
+    <div class="color-swatch" style="background-color: #008000;"></div>
+    <span class="color-name">Green</span>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const colorOptions = document.querySelectorAll('.color-option');
+
+  colorOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      colorOptions.forEach(opt => opt.classList.remove('active'));
+      option.classList.add('active');
+      
+    });
+  });
+});
+</script>
+<h4>SELECT SIZE</h4>
+<div class="shirt-size">
+  <button class="btn-size">38</button>
+  <button class="btn-size">40</button>
+  <button class="btn-size">42</button>
+  <button class="btn-size">44</button>
+  <button class="btn-size">46</button>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+      <button class="accordion-header">
+          Description
+          <span class="arrow">&#9660;</span>
+      </button>
+      <div class="accordion-content">
+          <strong>The Finer Details</strong><br>
+    
+            <br>Fit : Regular fit
+            <br>Occasion: Casual
+            <br>Pattern : Solid
+            <br>Sleeve: Full Sleeve
+            <br>Color : Red
+            <br>Weave: 
+            Oxford
+
+          </p>
+      </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">
+        Delivery Information
+        <span class="arrow">&#9660;</span>
+    </button>
+    <div class="accordion-content">
+        <p>Free shipping across the India.
+            Product are shipped from our warehouse within 1 to 2 working days.   <br>
+            The order will be guaranteed delivered in 4-5 days from the date of order Placed.<br>
+        </p>
+    </div>
+</div>
+</div>
+<script>
+  document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+
+       
+        document.querySelectorAll('.accordion-content').forEach(item => {
+            if (item !== content) {
+                item.style.display = 'none';
+                item.previousElementSibling.classList.remove('active');
+            }
+        });
+
+      
+        const isOpen = content.style.display === 'block';
+        content.style.display = isOpen ? 'none' : 'block';
+        button.classList.toggle('active', !isOpen);
+    });
+});
+</script>
+<div class="noofitems">
+<button id="dec" onclick="Decrement()">-</button>
+<span class="value" id="value">1</span>
+<button id="inc" onclick="Increment()">+</button>
+</div>
+<script>
+  let count=0;
+  function update(){
+    document.getElementById('value').textContent=count;
+
+  }
+  function Increment(){
+    
+    count++;
+    update();
+  }
+ function Decrement(){
+  if(count > 1)
+ {
+  count--;
+  update();
+ }
+ }
+</script>
+
+<button id="buynow">Buy Now</button>
+<button id="addtocart">Add to Cart</button>
+
+<div id="free">
+  <img src="./images/freedelivery.png" alt="free delivery" class="freed">
+  <h4 class="free">Free Delivery - </h4>
+  <a id="postal" href="url">Enter your postal code for Delivery availabiltiy</a>
+</div>
+</div>
+
+  </div>
+
+</body>
+</html>
